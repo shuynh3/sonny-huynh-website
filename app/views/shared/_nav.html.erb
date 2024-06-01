@@ -1,9 +1,15 @@
-<nav class="flex flex-col items-center p-10 gap-5 bg-neutral text-white w-[20%]">
-  <%= link_to root_path, class: 'flex' do %>
-    <div class="p-3 text-3xl">
+<nav class="flex flex-col items-center p-10 gap-10 bg-neutral text-white w-[20%]">
+
+  <%= link_to root_path, class: 'flex flex-col items-center' do %>
+    <div class="p-3 text-8xl relative">
+      <!--      <i class="absolute fa-solid fa-sun animate-ping-slow"></i>-->
+      <i class="fa-solid fa-sun"></i>
+    </div>
+    <div class="p-3 text-4xl font-bold">
       Sonny Huynh
     </div>
   <% end %>
+
   <div class="flex gap-5">
     <%= link_to root_path do %>
       <div class="p-3 text-2xl">
