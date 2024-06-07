@@ -1,7 +1,25 @@
-<%= render 'shared/card', card_image_path: image_path('railing_side.jpg') do %>
-  <div class="flex flex-1">
-    <div class="flex-1">
-      "Hello! I'm [Your Name], a passionate software engineer specializing in web development and cloud computing. With a strong background in coding and problem-solving, I aim to create efficient and scalable software solutions. Welcome to my personal resume website!"
+<div class="flex flex-1">
+  <div id="left" class="flex-1 max-w-[20%]"></div>
+
+  <div id="center" class="flex flex-col flex-1">
+    <div class="flex-1 max-h-[15%]"></div>
+
+    <div class="flex flex-1">
+      <%= render 'shared/card' do %>
+        <%= turbo_frame_tag :card_content, src: about_path, class: 'flex flex-1' %>
+      <% end %>
+    </div>
+
+    <div class="flex flex-1 max-h-[15%]">
+      <%= render 'shared/links' %>
     </div>
   </div>
-<% end %>
+
+  <div id="right" class="flex flex-col flex-1 max-w-[20%]">
+    <div class="flex-1 max-h-[15%]"></div>
+
+    <%= render 'shared/nav' %>
+
+    <div class="flex-1 max-h-[15%]"></div>
+  </div>
+</div>
