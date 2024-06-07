@@ -1,3 +1,19 @@
-<div class="bg-surface rounded-lg p-10 flex flex-col px-20 shadow">
-  <%= yield %>
+<div class="flex bg-surface rounded-lg p-10 gap-10 shadow">
+  <div class="flex flex-col flex-1 gap-5">
+    <div class="text-4xl">
+      About Me
+    </div>
+
+    <div class="flex flex-1">
+      <%= yield %>
+    </div>
+  </div>
+
+  <% if local_assigns[:card_image_path] %>
+    <div class="flex-1 max-w-[40%] relative flex">
+      <div class="absolute h-[calc(100%-1rem)] w-[calc(100%-1rem)] bg-secondary right-0 top-0 rounded-lg shadow"></div>
+      <div class="absolute h-[calc(100%-1rem)] w-[calc(100%-1rem)] left-0 bottom-0 rounded-lg bg-no-repeat bg-cover bg-center shadow"
+           style="background-image: url('<%= local_assigns[:card_image_path] %>')"></div>
+    </div>
+  <% end %>
 </div>
