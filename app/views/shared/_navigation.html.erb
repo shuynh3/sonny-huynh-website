@@ -1,11 +1,9 @@
-<nav class="flex flex-1 flex-col items-center gap-10 text-neutral">
-  <%= link_to about_path, class: 'transition duration-100 hover:scale-125' do %>
-    <div class="py-5 px-10 rounded text-6xl relative bg-surface shadow">
-      <i class="fa-solid fa-sun"></i>
-    </div>
-  <% end %>
+<%# locals: (selected: nil) -%>
 
-  <%= link_to root_path, class: 'transition duration-100 hover:scale-125' do %>
+<nav id="navigation" class="flex flex-1 flex-col items-center gap-10 text-neutral">
+  <%= render 'shared/navigation/link', path: about_path, selected: selected == 'about' %>
+
+  <%= link_to root_path, class: 'transition duration-100 hover:scale-125', data: { turbo_stream: true }  do %>
     <div class="py-5 px-10 rounded  text-6xl relative bg-surface shadow">
       <i class="fa-solid fa-sun"></i>
     </div>

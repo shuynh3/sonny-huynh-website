@@ -1,0 +1,15 @@
+<%# locals: (path:, selected: false) -%>
+
+<% if selected %>
+  <div class="scale-125 cursor-pointer">
+    <div class="rounded py-5 px-10 text-6xl relative bg-surface shadow border border-secondary">
+      <i class="fa-solid fa-sun"></i>
+    </div>
+  </div>
+<% else %>
+  <%= link_to path, class: 'transition duration-100 hover:scale-125', data: { turbo_stream: true } do %>
+    <div class="py-5 rounded px-10 text-6xl relative bg-surface shadow">
+      <i class="fa-solid fa-sun"></i>
+    </div>
+  <% end %>
+<% end %>
