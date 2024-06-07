@@ -10,9 +10,9 @@
   </div>
 
   <% if local_assigns[:card_image_path] %>
-    <div class="flex-1 max-w-[40%] relative flex">
-      <div class="absolute h-[calc(100%-1rem)] w-[calc(100%-1rem)] bg-secondary right-0 top-0 rounded-lg shadow"></div>
-      <div class="absolute h-[calc(100%-1rem)] w-[calc(100%-1rem)] left-0 bottom-0 rounded-lg bg-no-repeat bg-cover bg-center shadow"
+    <div class="flex flex-1 relative">
+      <div class="absolute right-0 top-0 rounded-lg shadow bg-secondary h-[calc(100%-1rem)] w-[calc(100%-1rem)] "></div>
+      <div class="absolute left-0 bottom-0 rounded-lg shadow bg-no-repeat bg-cover bg-center h-[calc(100%-1rem)] w-[calc(100%-1rem)] "
            style="background-image: url('<%= local_assigns[:card_image_path] %>')"></div>
     </div>
   <% end %>
