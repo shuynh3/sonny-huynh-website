@@ -12,28 +12,8 @@
   </head>
 
   <body class="flex h-screen w-screen bg-base">
-    <main class="flex">
-      <div id="left" class="flex-1 max-w-[20%]"></div>
-
-      <div id="center" class="flex flex-col flex-1">
-        <div class="flex-1 max-h-[15%]"></div>
-
-        <div class="flex flex-1">
-          <%= yield %>
-        </div>
-
-        <div class="flex flex-1 max-h-[15%]">
-          <%= render 'shared/links' %>
-        </div>
-      </div>
-
-      <div id="right" class="flex flex-col flex-1 max-w-[20%]">
-        <div class="flex-1 max-h-[15%]"></div>
-
-        <%= render 'shared/nav' %>
-
-        <div class="flex-1 max-h-[15%]"></div>
-      </div>
+    <main class="flex flex-1">
+      <%= yield %>
     </main>
   </body>
 </html>
