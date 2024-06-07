@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <title>Sonny Huynh</title>
@@ -10,13 +11,29 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="flex h-screen w-screen">
-    <%= render 'shared/nav' %>
+  <body class="flex h-screen w-screen bg-base">
+    <main class="flex">
+      <div id="left" class="flex-1 max-w-[20%]"></div>
 
-    <main class="flex flex-1 w-[80%] bg-base">
-      <%= yield %>
+      <div id="center" class="flex flex-col flex-1">
+        <div class="flex-1 max-h-[15%]"></div>
+
+        <div class="flex flex-1">
+          <%= yield %>
+        </div>
+
+        <div class="flex flex-1 max-h-[15%]">
+          <%= render 'shared/links' %>
+        </div>
+      </div>
+
+      <div id="right" class="flex flex-col flex-1 max-w-[20%]">
+        <div class="flex-1 max-h-[15%]"></div>
+
+        <%= render 'shared/nav' %>
+
+        <div class="flex-1 max-h-[15%]"></div>
+      </div>
     </main>
-
-    <%= render 'shared/links' %>
   </body>
 </html>
