@@ -1,4 +1,4 @@
-<div class="flex gap-10 p-10">
+<div class="flex flex-1 gap-10 p-10">
   <div class="flex flex-col flex-1 gap-5">
     <div class="flex">
       <div class="text-4xl">
@@ -11,9 +11,9 @@
 
     <div class="flex flex-1">
       <div class="flex flex-1">
-        <div class="flex-1">
-          "Hello! I'm [Your Name], a passionate software engineer specializing in web development and cloud computing. With a strong background in coding and problem-solving, I aim to create efficient and scalable software solutions. Welcome to my personal resume website!"
-        </div>
+        <%= render 'shared/card' do %>
+         Hello
+        <% end %>
       </div>
     </div>
   </div>
