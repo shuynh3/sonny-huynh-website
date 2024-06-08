@@ -1,29 +1,9 @@
 <%# locals: (selected: nil) -%>
 
 <nav id="navigation" class="flex flex-1 flex-col items-center gap-10 text-neutral">
-  <%= render 'shared/navigation/link', path: about_path, selected: selected == 'about' %>
-
-  <%= link_to root_path, class: 'transition duration-100 hover:scale-125', data: { turbo_stream: true }  do %>
-    <div class="py-5 px-10 rounded  text-6xl relative bg-surface shadow">
-      <i class="fa-solid fa-sun"></i>
-    </div>
-  <% end %>
-
-  <%= link_to root_path do %>
-    <div class="py-5 px-10 rounded  text-6xl relative bg-surface shadow">
-      <i class="fa-solid fa-sun"></i>
-    </div>
-  <% end %>
-
-  <%= link_to root_path do %>
-    <div class="py-5 px-10 rounded  text-6xl relative bg-surface shadow">
-      <i class="fa-solid fa-sun"></i>
-    </div>
-  <% end %>
-
-  <%= link_to root_path do %>
-    <div class="py-5 px-10 rounded  text-6xl relative bg-surface shadow">
-      <i class="fa-solid fa-sun"></i>
-    </div>
-  <% end %>
+  <%= render 'shared/navigation/link', path: about_path, selected: selected == :about %>
+  <%= render 'shared/navigation/link', path: career_path, selected: selected == :career %>
+  <%= render 'shared/navigation/link', path: skills_path, selected: selected == :skills %>
+  <%= render 'shared/navigation/link', path: projects_path, selected: selected == :projects %>
+  <%= render 'shared/navigation/link', path: contact_path, selected: selected == :contact %>
 </nav>
