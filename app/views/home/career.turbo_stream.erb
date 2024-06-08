@@ -1,7 +1,7 @@
-<%= turbo_stream.replace(:content) do %>
+<%= turbo_stream.update(:content) do %>
   <%= render 'home/career/content' %>
 <% end %>
 
-<%= turbo_stream.replace(:navigation) do %>
+<%= turbo_stream.update(:navigation) do %>
   <%= render 'shared/navigation', selected: :career  %>
 <% end %>

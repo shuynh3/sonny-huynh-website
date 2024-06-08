@@ -1,6 +1,6 @@
 <%# locals: (selected: nil) -%>
 
-<nav id="navigation" class="flex flex-1 flex-col items-center gap-10 text-neutral">
+<nav class="flex flex-1 flex-col items-center gap-10 text-neutral">
   <%= render 'shared/navigation/link', path: about_path, selected: selected == :about %>
   <%= render 'shared/navigation/link', path: career_path, selected: selected == :career %>
   <%= render 'shared/navigation/link', path: skills_path, selected: selected == :skills %>
