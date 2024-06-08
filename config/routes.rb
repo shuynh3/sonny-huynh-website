@@ -11,4 +11,8 @@ Rails.application.routes.draw do
   resources :home, only: [:index]
 
   get :about, to: 'home#about', as: :about
+  get :career, to: 'home#career', as: :career
+  get :contact, to: 'home#contact', as: :contact
+  get :projects, to: 'home#projects', as: :projects
+  get :skills, to: 'home#skills', as: :skills
 end
