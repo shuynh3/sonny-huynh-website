@@ -1,0 +1,7 @@
+<%= turbo_stream.replace(:content) do %>
+  <%= render 'home/projects/content' %>
+<% end %>
+
+<%= turbo_stream.replace(:navigation) do %>
+  <%= render 'shared/navigation', selected: :projects  %>
+<% end %>
