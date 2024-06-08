@@ -1,9 +1,9 @@
 <%# locals: (selected: nil) -%>
 
 <nav class="flex flex-1 flex-col items-center gap-10 text-neutral">
-  <%= render 'shared/navigation/link', path: about_path, selected: selected == :about %>
-  <%= render 'shared/navigation/link', path: career_path, selected: selected == :career %>
-  <%= render 'shared/navigation/link', path: skills_path, selected: selected == :skills %>
-  <%= render 'shared/navigation/link', path: projects_path, selected: selected == :projects %>
-  <%= render 'shared/navigation/link', path: contact_path, selected: selected == :contact %>
+  <%= render 'shared/navigation/link', path: about_path, selected: selected?(selected, :about) %>
+  <%= render 'shared/navigation/link', path: career_path, selected: selected?(selected, :career) %>
+  <%= render 'shared/navigation/link', path: skills_path, selected: selected?(selected, :skills) %>
+  <%= render 'shared/navigation/link', path: projects_path, selected: selected?(selected, :projects) %>
+  <%= render 'shared/navigation/link', path: contact_path, selected: selected?(selected, :contact) %>
 </nav>
