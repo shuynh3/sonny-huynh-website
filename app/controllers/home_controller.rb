@@ -1,9 +1,9 @@
 class HomeController < ApplicationController
   def about; end
 
-  def experience; end
+  def career; end
 
-  def education; end
+  def skills; end
 
   def projects; end
 
