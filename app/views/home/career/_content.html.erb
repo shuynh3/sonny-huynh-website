@@ -9,12 +9,23 @@
       </div>
     </div>
 
-    <div class="flex flex-1">
-      <div class="flex flex-1">
-        <%= render 'shared/card' do %>
-         Hello
-        <% end %>
-      </div>
+    <div class="flex flex-col">
+      <%= render 'shared/card' do %>
+        <div class="flex flex-1 items-center p-5 gap-5">
+          <div class="w-[6rem] h-[2.4rem] bg-contain bg-no-repeat bg-center" style="<%= image_style('asu.png') %>"></div>
+
+          <div class="flex flex-col justify-center">
+            <div class=""> Arizona State University </div>
+            <div class=""> B.S. Computer Science </div>
+          </div>
+
+          <div class="flex flex-1 justify-end">
+            <div class="flex flex-col">
+              2021
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

@@ -11,7 +11,6 @@
 
     <div class="flex flex-1">
       <div class="flex flex-1">
-        <%= @something %>
         <div class="flex-1">
           "Hello! I'm [Your Name], a passionate software engineer specializing in web development and cloud computing. With a strong background in coding and problem-solving, I aim to create efficient and scalable software solutions. Welcome to my personal resume website!"
         </div>
@@ -21,7 +20,7 @@
 
   <div class="flex flex-1 relative max-w-[40%]">
     <div class="absolute right-0 top-0 rounded-lg shadow bg-secondary h-[calc(100%-1rem)] w-[calc(100%-1rem)] "></div>
-    <div class="absolute left-0 bottom-0 rounded-lg shadow bg-no-repeat bg-cover bg-center h-[calc(100%-1rem)] w-[calc(100%-1rem)] "
-         style="background-image: url('<%= image_path('railing_side.jpg') %>')"></div>
+    <div class="absolute left-0 bottom-0 rounded-lg shadow bg-no-repeat bg-cover bg-center h-[calc(100%-1rem)] w-[calc(100%-1rem)]"
+         style="<%= image_style('railing_side.jpg') %>"></div>
   </div>
 </div>
