@@ -1,5 +1,9 @@
-<%# locals: (header_text: 'Home') -%>
+<div class="flex">
+  <div class="text-4xl">
+    <%= local_assigns[:header] %>
+  </div>
 
-<div class="flex items-center p-10 mb-10 h-[8rem] bg-surface">
-  <div class="text-3xl"> <%= header_text %> </div>
+  <div class="flex flex-1 items-center pl-5">
+    <div class="w-full h-[2px] bg-secondary"></div>
+  </div>
 </div>

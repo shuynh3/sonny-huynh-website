@@ -1,31 +1,47 @@
 <div class="flex flex-1 gap-10 p-10">
-  <div class="flex flex-col flex-1 gap-5">
-    <div class="flex">
-      <div class="text-4xl">
-        Career
-      </div>
-      <div class="flex flex-1 items-center px-5">
-        <div class="w-full h-[2px] bg-secondary"></div>
-      </div>
-    </div>
+  <div class="flex flex-col flex-1 gap-10">
+    <%= render 'shared/header', header: 'Career' %>
 
-    <div class="flex flex-col">
-      <%= render 'shared/card' do %>
-        <div class="flex flex-1 items-center p-5 gap-5">
-          <div class="w-[6rem] h-[2.4rem] bg-contain bg-no-repeat bg-center" style="<%= image_style('asu.png') %>"></div>
-
-          <div class="flex flex-col justify-center">
-            <div class=""> Arizona State University </div>
-            <div class=""> B.S. Computer Science </div>
-          </div>
-
-          <div class="flex flex-1 justify-end">
-            <div class="flex flex-col">
-              2021
-            </div>
-          </div>
+    <div class="flex flex-col gap-10">
+      <div class="flex flex-1 gap-5">
+        <div class="text-xl text-gray-400 pt-[1.5rem]" style="writing-mode: vertical-rl; text-orientation: sideways;">
+          Education
         </div>
-      <% end %>
+
+        <div class="flex flex-col flex-1 gap-5 bg-base rounded-lg p-5">
+          <%= render 'home/career/education',
+                     school: 'Arizona State University',
+                     study: 'B.S. Computer Science',
+                     date: '2021',
+                     image: 'asu.png' %>
+        </div>
+      </div>
+
+      <div class="flex flex-1 gap-5">
+        <div class="text-xl text-gray-400 pt-[1.5rem]" style="writing-mode: vertical-rl; text-orientation: sideways;">
+          Experience
+        </div>
+
+        <div class="flex flex-col flex-1 gap-5 bg-base rounded-lg p-5">
+          <%= render 'home/career/experience',
+                     position: 'Senior Software Engineer',
+                     company: 'StrongMind',
+                     date_range: '2024 - Present',
+                     image: 'strongmind.png' %>
+
+          <%= render 'home/career/experience',
+                     position: 'Software Engineer',
+                     company: 'StrongMind',
+                     date_range: '2022 - 2024',
+                     image: 'strongmind.png' %>
+
+          <%= render 'home/career/experience',
+                     position: 'Junior Software Engineer',
+                     company: 'StrongMind',
+                     date_range: '2021 - 2022',
+                     image: 'strongmind.png' %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
