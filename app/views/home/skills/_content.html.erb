@@ -2,11 +2,47 @@
   <div class="flex flex-col flex-1 gap-5">
     <%= render 'shared/header', header: 'Skills' %>
 
-    <div class="flex flex-1">
-      <div class="flex flex-1">
-        <div class="flex-1">
-          "Hello! I'm [Your Name], a passionate software engineer specializing in web development and cloud computing. With a strong background in coding and problem-solving, I aim to create efficient and scalable software solutions. Welcome to my personal resume website!"
-        </div>
+    <div class="flex flex-1 gap-5">
+      <div class="text-xl text-gray-400 pt-[1rem]" style="writing-mode: vertical-rl; text-orientation: sideways;">
+        Languages
+      </div>
+
+      <div class="flex flex-wrap flex-1 gap-5 bg-base rounded-lg p-5 shadow-inner">
+        <%= render 'home/skills/skill', icon: 'ruby.png', skill: 'Ruby' %>
+        <%= render 'home/skills/skill', icon: 'python.png', skill: 'Python' %>
+        <%= render 'home/skills/skill', icon: 'csharp.png', skill: 'C#' %>
+        <%= render 'home/skills/skill', icon: 'cplusplus.png', skill: 'C++' %>
+        <%= render 'home/skills/skill', icon: 'java.png', skill: 'Java' %>
+        <%= render 'home/skills/skill', icon: 'js.png', skill: 'Javascript' %>
+        <%= render 'home/skills/skill', icon: 'postgresql.png', skill: 'PostgreSQL' %>
+        <%= render 'home/skills/skill', icon: 'html.png', skill: 'HTML' %>
+        <%= render 'home/skills/skill', icon: 'css.png', skill: 'CSS' %>
+      </div>
+    </div>
+
+    <div class="flex flex-1 gap-5">
+      <div class="text-xl text-gray-400 pt-[1rem]" style="writing-mode: vertical-rl; text-orientation: sideways;">
+        Frameworks
+      </div>
+      <div class="flex flex-wrap flex-1 gap-5 bg-base rounded-lg p-5 shadow-inner">
+        <%= render 'home/skills/skill', icon: 'rails.png', skill: 'Ruby on Rails' %>
+        <%= render 'home/skills/skill', icon: 'django.png', skill: 'Django' %>
+        <%= render 'home/skills/skill', icon: 'dotnet.png', skill: 'Dotnet' %>
+      </div>
+    </div>
+
+    <div class="flex flex-1 gap-5">
+      <div class="text-xl text-gray-400 pt-[1rem]" style="writing-mode: vertical-rl; text-orientation: sideways;">
+        DevOps
+      </div>
+      <div class="flex flex-wrap flex-1 gap-5 bg-base rounded-lg p-5 shadow-inner">
+        <%= render 'home/skills/skill', icon: 'github.png', skill: 'GitHub' %>
+        <%= render 'home/skills/skill', icon: 'github_actions.png', skill: 'GitHub Actions' %>
+        <%= render 'home/skills/skill', icon: 'aws.png', skill: 'AWS' %>
+        <%= render 'home/skills/skill', icon: 'azure.png', skill: 'Azure' %>
+        <%= render 'home/skills/skill', icon: 'azure_devops.png', skill: 'Azure DevOps' %>
+        <%= render 'home/skills/skill', icon: 'heroku.png', skill: 'Heroku' %>
+        <%= render 'home/skills/skill', icon: 'docker.png', skill: 'Docker' %>
       </div>
     </div>
   </div>
